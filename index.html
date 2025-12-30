@@ -1,31 +1,189 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Cricket Website - Frames</title>
+  <title>Cricket World</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      background-color: NavajoWhite;
+    }
+
+    /* Header */
+    .header {
+      background-color: Wheat;
+      padding: 15px;
+    }
+
+    .header h1 {
+      margin: 0;
+    }
+
+    /* Menu */
+    .menu {
+      background-color: BurlyWood;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    .menu a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main Layout */
+    .container {
+      display: flex;
+    }
+
+    /* Services */
+    .services {
+      width: 25%;
+      background-color: PapayaWhip;
+      padding: 10px;
+    }
+
+    .services ul {
+      padding-left: 18px;
+    }
+
+    /* Content */
+    .content {
+      width: 75%;
+      padding: 15px;
+      background-color: NavajoWhite;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+  </style>
+
 </head>
+<body>
 
-<!-- Main frameset: 3 rows -->
-<frameset rows="20%, 10%, 70%">
-  
-  <!-- Row 1: 2 columns (logo | header) -->
-  <frameset cols="20%, 80%">
-    <frame src="logo.html" name="logoFrame">
-    <frame src="header.html" name="headerFrame">
-  </frameset>
+  <!-- HEADER -->
+  <div class="header">
+    <h1>Cricket World</h1>
+    <p>Simple cricket information website</p>
+  </div>
 
-  <!-- Row 2: navigation bar (we’ll layout links inside this frame) -->
-  <frame src="menu.html" name="menuFrame">
+  <!-- MENU -->
+  <div class="menu">
+    <a href="#home">Home</a>
+    <a href="#login">Login</a>
+    <a href="#registration">Registration</a>
+    <a href="#catalogue">Catalogue</a>
+    <a href="#cart">Cart</a>
+    <a href="#contact">Contact Us</a>
+  </div>
 
-  <!-- Row 3: 2 columns (services | main content) -->
-  <frameset cols="25%, 75%">
-    <frame src="services.html" name="servicesFrame">
-    <!-- bottom-right frame where all pages will load -->
-    <frame src="home.html" name="contentFrame">
-  </frameset>
+  <!-- BODY -->
+  <div class="container">
 
-  <noframes>
-    Your browser does not support frames.
-  </noframes>
+    <!-- SERVICES -->
+    <div class="services">
+      <h3>Services</h3>
+      <ul>
+        <li><a href="#live">Live Scores</a></li>
+        <li><a href="#fixtures">Match Fixtures</a></li>
+        <li><a href="#teams">Team Info</a></li>
+        <li><a href="#rules">Cricket Rules</a></li>
+        <li><a href="#gallery">Photo Gallery</a></li>
+      </ul>
+    </div>
 
-</frameset>
+    <!-- CONTENT -->
+    <div class="content">
+
+      <!-- HOME -->
+      <div id="home">
+        <h2>Welcome to Cricket World</h2>
+
+        <h3>Top 3 Teams</h3>
+        <ul>
+          <li>India</li>
+          <li>Australia</li>
+          <li>England</li>
+        </ul>
+
+        <h3>About Cricket</h3>
+        <p>
+          Cricket is a bat-and-ball game played between two teams of eleven players.
+          The game is played on a field with a 22-yard pitch and a wicket at each end.
+        </p>
+      </div>
+
+      <!-- LOGIN -->
+      <div id="login">
+        <h2>Login</h2>
+        <p>This is a placeholder for the login page.</p>
+      </div>
+
+      <!-- REGISTRATION -->
+      <div id="registration">
+        <h2>Registration</h2>
+        <p>Registration page for new cricket portal users.</p>
+      </div>
+
+      <!-- CATALOGUE -->
+      <div id="catalogue">
+        <h2>Cricket Catalogue</h2>
+        <p>Cricket items like bats, balls, pads can be shown here.</p>
+      </div>
+
+      <!-- CART -->
+      <div id="cart">
+        <h2>Cart</h2>
+        <p>Your selected cricket items will appear here.</p>
+      </div>
+
+      <!-- CONTACT -->
+      <div id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@cricketworld.com</p>
+        <p>Phone: +91-XXXXXXXXXX</p>
+      </div>
+
+      <!-- LIVE SCORES -->
+      <div id="live">
+        <h2>Live Scores</h2>
+        <p>Live cricket scores will be shown here.</p>
+      </div>
+
+      <!-- FIXTURES -->
+      <div id="fixtures">
+        <h2>Match Fixtures</h2>
+        <p>Upcoming cricket match schedules.</p>
+      </div>
+
+      <!-- TEAMS -->
+      <div id="teams">
+        <h2>Teams</h2>
+        <p>Information about international and domestic teams.</p>
+      </div>
+
+      <!-- RULES -->
+      <div id="rules">
+        <h2>Cricket Rules</h2>
+        <p>Basic rules of cricket explained here.</p>
+      </div>
+
+      <!-- GALLERY -->
+      <div id="gallery">
+        <h2>Photo Gallery</h2>
+        <p>Cricket grounds and players photos.</p>
+      </div>
+
+    </div>
+  </div>
+
+</body>
 </html>
